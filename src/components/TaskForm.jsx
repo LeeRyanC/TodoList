@@ -8,22 +8,11 @@ const TaskForm = ({addTask, tasks}) => {
     const submitHandler = (e) => {
         e.preventDefault();
 
-        let copy = tasks.map(task => {
-            if(task.text === input){
-                return input
-            }
-            else return;
+        addTask({
+            text: input,
+            id: Math.floor(Math.random() * 10000),
+            complete: false
         })
-        if(copy.length){
-            alert("That's already on the list!")
-        }
-        else {
-            addTask({
-                text: input,
-                id: Math.floor(Math.random() * 10000),
-                complete: false
-            })
-        }
 
         setInput("")
     }

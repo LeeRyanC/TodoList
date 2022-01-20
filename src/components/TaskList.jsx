@@ -7,6 +7,15 @@ const TaskList = () => {
     const [tasks, setTasks] = useState([])
 
     const addTask = (task) => {
+        if(!task.text){
+            return;
+        }
+        for(const todo of tasks){
+            if(task.text === todo.text){
+                alert("That's already on the list!")
+            }
+            return;
+        }
         setTasks([task, ...tasks])
     }
 
