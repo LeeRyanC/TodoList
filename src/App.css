@@ -3,7 +3,7 @@
 }
 
 body {
-    background: linear-gradient(rgb(74, 49, 125), rgb(197, 169, 252));
+    background: linear-gradient(rgb(255, 128, 0), rgb(255, 199, 143));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
     color: black;
@@ -50,15 +50,28 @@ body {
     padding: 50px;
     margin: 40px auto 150px auto;
     min-height: 450px;
+    background: linear-gradient(rgb(255, 176, 97), rgb(255, 148, 41));
 }
 
 input[type="text"] {
-    background: linear-gradient(rgb(74, 49, 125), rgb(197, 169, 252));
+    background: rgb(255, 199, 143);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border: none;
 }
 
 .submit-btn {
     margin-left: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: transparent;
+    border-style: solid;
+    border-color: rgb(255, 199, 143);
+    padding: 3px 10px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .form-container {

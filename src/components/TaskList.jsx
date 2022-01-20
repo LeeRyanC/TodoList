@@ -10,12 +10,6 @@ const TaskList = () => {
         if(!task.text){
             return;
         }
-        for(const todo of tasks){
-            if(task.text === todo.text){
-                alert("That's already on the list!")
-            }
-            return;
-        }
         setTasks([task, ...tasks])
     }
 
@@ -25,7 +19,7 @@ const TaskList = () => {
 
     return (
         <div>
-            <h1>What do you need to do today?</h1>
+            <h1>What's on the agenda today?</h1>
             <TaskForm className="task-form" addTask={addTask} tasks={tasks}/>
             <Task deleteTask={deleteTask} tasks={tasks} setTasks={setTasks}/>
         </div>
